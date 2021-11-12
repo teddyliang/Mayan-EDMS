@@ -16,3 +16,5 @@ jobs:
       run: make docker-build
     - name: Run tests
       run: make docker-runtest-all
+    - name: ansible-lint
+      uses: ansible/ansible-lint-action@v4.1.0.post0
